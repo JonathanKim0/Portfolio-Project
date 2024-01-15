@@ -2,16 +2,18 @@ import './App.css';
 import React from 'react';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Navbar from './components/Navbar';
-import About from './pages/About'
+import About from './pages/Project'
 import Home from './pages/Home';
 import Footer from './components/Footer';
+import Contact from './pages/Contact';
 
 
 function App() {
   const routes = [
     { path: "/home", element: <Home /> },
-    { path: "/about", element: <About /> },
+    { path: "/project", element: <About /> },
     { path: "/", element: <Home /> },
+    { path: "/contact", element: <Contact /> }
   ];
 
 

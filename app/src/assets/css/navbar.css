@@ -43,23 +43,23 @@
     font-size: 40px;
   }
   
-  .navbar #open {
+  .navbar #visible {
     padding-left: 0px;
   }
-  .navbar #open img {
+  .navbar #visible img {
     display: none;
   }
   
-  .navbar #close img {
+  .navbar #hidden img {
     display: inherit;
   }
   
-  .navbar #open .hiddenLinks {
+  .navbar #visible .hiddenLinks {
     display: inherit;
     margin-left: 30px;
   }
   
-  .navbar #close .hiddenLinks {
+  .navbar #hidden .hiddenLinks {
     display: none;
   }
   
