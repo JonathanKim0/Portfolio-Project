@@ -2,14 +2,15 @@ import './App.css';
 import React from 'react';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Navbar from './components/Navbar';
-import About from './pages/Project'
-import Home from './pages/Home';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Contact from './pages/Contact';
 
 
 function App() {
-  const routes = [
+  /*const routes = [
     { path: "/home", element: <Home /> },
     { path: "/project", element: <About /> },
     { path: "/", element: <Home /> },
@@ -24,6 +25,18 @@ function App() {
         <Routes>  
           { routes.map((route, i) => (<Route key={ i } path={ route.path } element={ route.element } />)) }
         </Routes>
+        <Footer/>
+      </BrowserRouter>
+    </div>
+  );*/
+  return(
+    <div className="App">
+      <BrowserRouter>
+        <Navbar/>
+        <Home/>
+        <About/>
+        <Projects/>
+        <Contact/>
         <Footer/>
       </BrowserRouter>
     </div>

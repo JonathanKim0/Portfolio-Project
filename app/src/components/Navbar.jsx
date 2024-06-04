@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../assets/css/Navbar.css'
+
 function Navbar() {
 
   return (
     <div className='navbar'>
-      <Link to='/home'>Home</Link>
+      <a href='#home-div'>Home</a>
       <p>|</p>
-      <Link to='/about'>About</Link>
+      <a href='#about-div'>About</a>
       <p>|</p>
-      <Link to='/project'>Projects</Link>
+      <a href='#projects-div'>Projects</a>
       <p>|</p>
-      <Link to='/contact'>Contact</Link>
+      <a href='#contact-div'>Contact</a>
     </div>
   )
 }
