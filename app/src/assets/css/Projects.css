@@ -1,6 +1,6 @@
 #projects-div{
-    padding-top: 90px;
+    scroll-margin-top: 75px;
     width: 100%;
     height: 400px;
-    background-color: yellowgreen;
+    background-color: #E3D5CA;
 }
