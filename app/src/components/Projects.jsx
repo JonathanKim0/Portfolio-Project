@@ -4,7 +4,11 @@ import '../assets/css/Projects.css'
 function Header() {
   return (
     <div id='projects-div'>
-        Projects
+      <div class='row-div'>
+        <div class='project'>hi</div>
+        <div class='project'>hi</div>
+        <div class='project'>hi</div>
+      </div>
     </div>
   )
 }
