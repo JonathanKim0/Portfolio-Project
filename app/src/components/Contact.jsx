@@ -10,7 +10,7 @@ function Header() {
     <div id="contact-div">
       <div class="contact-container">
         <h1>Connect With Me</h1>
-        <p>
+        <p style={{fontSize: "20px"}}>
           Thank you for visiting my portfolio. Feel free to explore my projects
           and reach out for potential collaborations.
         </p>
