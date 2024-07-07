@@ -40,7 +40,7 @@ function Header() {
               </div>
               <label>Message</label>
               <textarea rows="5" placeholder="Your Message"></textarea>
-              <button type="submit">Send</button>
+              <button class='click-button' type="submit">Send</button>
             </form>
           </div>
           <div class="contact-right">

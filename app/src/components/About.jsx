@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/css/About.css'
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -33,6 +34,12 @@ function Header() {
           <br />
           <br />
           Jonathan Kim
+          <br />
+          <br />
+          <NavLink to="/resume">
+            <button class='click-button'>View CV</button>
+          </NavLink>
+          
         </p>
       </div>
     </div>

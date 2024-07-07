@@ -68,16 +68,22 @@ label {
     font-size: 20px;
 }
 
-button {
-    background: #3F3B3B;
-    width: 100px;
-    border: none;
-    outline: none;
-    color: #fff;
+
+
+.click-button {
     height: 35px;
+    margin: 10px 0;
+    border: 2px solid #3F3B3B;
     border-radius: 30px;
-    margin-top: 20px;
-    margin-bottom: 19px;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.click-button:hover {
+    background-color: #3F3B3B;
+    color: #F5EBE0;
 }
 
 .contact-right div {
@@ -89,7 +95,7 @@ button {
     font-size: 20px;
 }
 
+
 .clickable-button:visited {
     color: inherit;
-
 }

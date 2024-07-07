@@ -1,12 +1,12 @@
 import React from 'react'
 import '../assets/css/Home.css'
-import winnieImage from '../assets/img/winnie_wink.jpg';
+import winnieStretch from '../assets/img/stretch.jpg';
 
 function Header() {
   return (
     <div id='home-div'>
         <p id='home-p'>Hello<br/>I'm Jonathan</p>
-        <img id='portrait' src={winnieImage}></img>
+        <img id='portrait' src={winnieStretch}></img>
     </div>
   )
 }
