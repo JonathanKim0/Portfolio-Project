@@ -1,10 +1,15 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
 import '../assets/css/Resume.css';
-import CV from '../assets/pdf/Jonathan Kim CV VEng.pdf';
+import ENG from '../assets/pdf/Jonathan Kim CV VEng.pdf';
+import FR from '../assets/pdf/Jonathan Kim CV VFr.pdf';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 function Resume() {
+
+    const changeSource = (src) => {
+        document.getElementById('resume-frame').src = src;
+    }
+
     return (
         <div className='Resume'>
             <div style={{padding: '10px'}}>
@@ -14,12 +19,12 @@ function Resume() {
                 <ArrowBackIcon style={{ fontSize: 60 , color: '#3F3B3B'}} />
             </a>
             </div>
-            <div class='pdf-div'>
-            <iframe id="resume-frame" src={CV}/>
+            <div className='pdf-div'>
+            <iframe id="resume-frame" src={ENG}/>
             </div>
-            <div class='button-div'>
-            <button className='big-button'>English</button>
-            <button className='big-button'>French</button>
+            <div className='button-div'>
+            <button className='big-button' onClick={() => changeSource(ENG)}>English</button>
+            <button className='big-button' onClick={() => changeSource(FR)}>French</button>
             </div>
             
         </div>
